@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     man \
     zsh \
     tmux \
+    bat \
     curl \
     git \
     pipx \
