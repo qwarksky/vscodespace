@@ -5,6 +5,12 @@
 The Goal is to create with vscode devcontainer an universal workspace for datascience.
 
 ---
+## Deployement
+1. terminal cli : `git clone https://github.com/qwarksky/vscodespace.git`
+2. In vscodespace directory run : `code .`
+3. vscode => `[Ctrl]+[Shift]+P` : panel to run commande
+4. vscode => Search : `Dev Containers: Rebuild and Reopen in Container`
+
 ## Documentation
 
 * devcontainers : 
