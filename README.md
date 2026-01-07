@@ -17,5 +17,5 @@ The Goal is to create with vscode devcontainer an universal workspace for datasc
 	* https://docs.marimo.io/guides/deploying/deploying_docker/#prerequisites
 
 ## CLI :
-* listing vscode extensions : code --list-extensions
-* listing installed extensions : code --list-extensions | % { "$_" }i
+* listing vscode extensions : `code --list-extensions`
+* listing installed extensions : `code --list-extensions | % { "$_" }`
