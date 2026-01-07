@@ -7,10 +7,13 @@ The Goal is to create with vscode devcontainer an universal workspace for datasc
 ---
 ## Documentation
 
-* devcontainers https://code.visualstudio.com/docs/devcontainers/containers
-* UV : https://docs.astral.sh/uv/guides/integration/docker/
+* devcontainers : 
+	* https://code.visualstudio.com/docs/devcontainers/containers
+* UV : 
+	* https://docs.astral.sh/uv/guides/integration/docker/
 	* https://docs.astral.sh/uv/guides/integration/docker/#available-images
-* Marimo notebook : https://docs.marimo.io/guides/deploying/prebuilt_containers/
+* Marimo notebook : 
+	* https://docs.marimo.io/guides/deploying/prebuilt_containers/
 	* https://docs.marimo.io/guides/deploying/deploying_docker/#prerequisites
 
 ## CLI :
