@@ -1,0 +1,29 @@
+[project]
+name = "vscodespace"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipython",
+    "polars",
+    "pyarrow",
+    "duckdb[all]",
+    "numpy",
+    "pandas",
+    "geopandas",
+    "networkx",
+    "lxml",
+    "python-calamine",
+    "marimo[recommended]",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "matplotlib",
+    "altair",
+    "quarto"
+]
+
+
+[tool.uv]
+cache-dir ="./.cache"

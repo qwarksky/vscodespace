@@ -1,0 +1,56 @@
+//https://code.visualstudio.com/docs/devcontainers/containers
+// uv : https://docs.astral.sh/uv/guides/integration/docker/
+// marimo : https://docs.marimo.io/guides/deploying/prebuilt_containers/
+
+{
+    "name": "vscodespace",
+    "build": {"dockerfile" : "Dockerfile"},
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=${localWorkspaceFolder}/sourcedata,target=/workspace/sourcedata,type=bind,consistency=cached",
+        "source=${localWorkspaceFolder}/report,target=/workspace/report,type=bind,consistency=cached",
+        "source=${localWorkspaceFolder}/export,target=/workspace/export,type=bind,consistency=cached"
+        ],
+    "features": {
+        "ghcr.io/devcontainers/features/nvidia-cuda:2": {
+            "installCudnn": true,
+            "cudaVersion": "12.5"
+            }
+    },
+    //https://github.com/cirolosapio/devcontainers-features/tree/main
+    //https://github.com/devcontainers/features/pkgs/container/features
+    //https://containers.dev/implementors/features/
+    //
+    "customizations": {
+        "vscode": {
+            "settings":{              
+                "python.pythonPath": ".venv/bin/python"
+            },
+            // listing vscode extensions : code --list-extensions
+            // extensions installed : code --list-extensions | % { "$_" }
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-python-envs",
+                "ms-azuretools.vscode-containers",
+                "ms-azuretools.vscode-docker",
+                "ms-python.debugpy",
+                "ms-python.vscode-pylance",
+                "ms-vscode-remote.remote-containers",
+                "marimo-team.vscode-marimo",
+                "dbcode.dbcode",
+                "ducklake.ducklab",
+                "iterative.dvc",
+                "iterative.vscode-dvc-pack",
+                "docker.docker",
+                "dnicolson.binary-plist",
+                "streetsidesoftware.code-spell-checker",
+                "tamasfe.even-better-toml",
+                "yzhang.markdown-all-in-one",
+                "nvidia.nsight-vscode-edition"
+            ]
+        }
+    },
+    "hostRequirements": {
+        "gpu": true 
+    }
+}
