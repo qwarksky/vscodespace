@@ -7,10 +7,12 @@ LABEL maintainer="Ezio Qwarksky"
 ENV HOME=/root
 ENV PYENV_ROOT=$HOME/.pyenv
 ENV PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$HOME/.local/bin:$PATH"
+
 ENV UV_PROJECT_ENVIRONMENT=/workspace/.venv
 ENV PATH="${UV_PROJECT_ENVIRONMENT}/bin:$PATH"
 ENV UV_SYSTEM_PYTHON=1
 ENV PATH="/workspace/.venv/bin:$PATH"
+ENV PATH="/etc/poetry/bin:$PATH"
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
