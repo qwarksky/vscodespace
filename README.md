@@ -5,9 +5,14 @@
 The Goal is to create with vscode devcontainer an universal workspace for datascience.
 
 ---
+## Details about Devcontainers config
+- basic_config : config with uv and other cli tools (~2.6GB)
+- analyst_devcontainer : with mounted directory and UV manager and Marimo (~2.6GB)
+- cuda_devcontainer : with mounted directory, cuda config, UV and Marimo (~5.6GB)
+
 ## Deployement
 1. terminal cli : `git clone https://github.com/qwarksky/vscodespace.git`
-2. In vscodespace directory run : `code .`
+2. Choose your config and inside run : `code .`
 3. vscode => `[Ctrl]+[Shift]+P` : panel to run commande
 4. vscode => Search : `Dev Containers: Rebuild and Reopen in Container`
 
